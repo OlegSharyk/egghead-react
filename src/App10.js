@@ -19,7 +19,7 @@ class App extends React.Component {
                 output: window.Babel
                     .transform(code, {presets: ['es2015', 'react']})
                     .code,
-                    err: ''
+                err: ''
             })
         } catch (err) {
             this.setState({err: err.message})
